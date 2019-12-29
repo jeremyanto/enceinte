@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+
+footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1
+{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15%;
+}
+
+/***********************************************************************/
+
+
+
+nav
+{
+    /* background-color: black; */
+    width: 100%;
+    height:100px;
+}
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: darkgray;
+    float: right;
+    margin-right: 15px;
+    margin-top: 18px;
+
+}
+
+section
+{
+
+    display: flex;
+    margin: 5% auto;
+    flex-wrap: wrap;
+
+    /* background-color: grey;*/
+    width: 95%;
+    height: 720px;
+    justify-content: space-around;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+div
+{
+    display: flex;
+    /* background-color: red;*/
+    width: 15%;
+    height: 180px;
+    flex-wrap: wrap;
+
+
+}
+div .trackspictures
+{
+    background-color: darkgray;
+    width: 50%;
+    height: 90px;
+}
+
+div .PlayPartage
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+}
+
+
+button
+{
+    /*border-color: #1db954;*/
+    border-radius: 30px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: small;
+
+}
+/*___________________________ShareButton____________*/
+.share {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: green;
+}
+
+
+/*____________________________ css menu burger_________________*/
+
+
+
+#nav-toggle {
+    background: transparent;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transform: translate(0%, -50%);
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    top: 10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    transition: all 0.5s ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(135deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-135deg);
+}
