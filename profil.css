@@ -1,0 +1,120 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.form{
+
+	width: 500px;
+	height:400px;
+	background-color: white;
+	margin-left: 460px;
+	margin-top: -160px;
+	border-radius: 30px;
+	box-shadow:0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pp{
+	background-image:url(img/emile-guillemot-LSP9Tpavbms-unsplash.jpg);
+	background-size: cover;
+	margin-top: 20px;
+	margin-left: 70px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+
+#name{
+
+	border-radius: 20px;
+	background-color: #F2F2F2;
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 50px;
+	font-size: 20px;
+
+}
+
+#lastname{
+
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        margin-top: -37px;
+        height: 30px;
+        width: 200px;
+        text-align: center;
+        margin-right: 15px;
+        margin-left: 190px;
+        font-size: 20px;
+        position: absolute;
+    }
+
+#firstname{
+
+    border-radius: 20px;
+	background-color: #F2F2F2;
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	margin-top: 40px;
+	margin-right: 15px;
+	margin-left: 50px;
+	font-size: 20px;
+
+}
+
+
+#adresse{
+border-radius: 20px;
+	background-color: #F2F2F2;
+	height: 30px;
+	width: 300px;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 50px;
+	font-size: 20px;
+}
+
+
+
+
+#mdp{
+border-radius: 20px;
+	background-color: #F2F2F2;
+	margin-top: 25px;
+	height: 30px;
+	width: 300px;
+	text-align: center;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.calendrier{
+	margin-top: 50px;
+	margin-left: 50px;
+	
+}
+
+.bouton{
+	border-radius: 20px;
+	background-color:#1CB954;
+	margin-top: 35px;
+	height: 30px;
+	width: 150px;
+	text-align: center;
+	margin-left: 170px;
+	font-size: 20px;
+}
+
+#select{
+	border-radius: 20px;
+	background-color: #F2F2F2;
+	margin-top: 5px;
+	height: 30px;
+	width: 130px;
+	text-align: center;
+	margin-left: 5px;
+	font-size: 20px;
+}
