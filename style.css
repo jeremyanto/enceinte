@@ -1,0 +1,80 @@
+.login {
+    margin-top: 145px;
+    text-align: center;
+    width: 400px;
+    margin-left: 440px;
+    border-radius: 10% 10% 10% 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #dddddd;
+    
+}
+
+p {
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.btn {
+    color: white;
+    background-color: #1CB954;
+    border-color: #1cb954 ;
+    border-radius: 10px 10px 10px 10px;
+    width: 250px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.btn1 {
+    border-radius: 20px;
+    background-color: #9a9a9a;
+    border-color: #9a9a9a;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pti {
+    font-size: 12px;
+}
+
+body {
+    
+    position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            height: 100%;
+        margin:0;
+        padding:0;
+        background-size: 100% ;
+        width:100%;  
+        color:black;
+    }
+    body:before {
+            content: "";
+            position: fixed;
+            height: 100%; width: 100%;
+            background: url(img/couleur.jpg);
+            background-size: cover;
+            z-index: -1; /* Keep the background behind the content */     
+            -webkit-filter: blur(6px);
+        -webkit-background-size: cover; /* pour Chrome et Safari */
+        -moz-background-size: cover; /* pour Firefox */
+        -o-background-size: cover; /* pour Opera */
+        background-size: cover; /* version standardisée */
+    }
+.name {
+    width: 300px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.forgot {
+    font-size: 12px;
+}
