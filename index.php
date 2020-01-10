@@ -12,13 +12,13 @@
   
   <div class="login">
     <p>Connectez-vous</p>
-  <form method="post" action"#"> 
+  <form method="post" > 
   <br>  <input type="text" placeholder="  Identifiant" id="username" class="name" name="coname"> </br>
   <br>  <input type="password" placeholder="  Mots de Passe" id="password" class="name" name="password"></br> 
 <br>  <input type="submit" class="btn1" value="connexion" name="connexion"></br>
 <p>-ou-</p>
 <br>  <div class="g-signin2" data-onsuccess="onSignIn" ></div></br>
-    <p class="pti">Vous n'avez pas encore de compte? <a title="Titre du lien" href="#">Inscrivez-vous
+    <p class="pti">Vous n'avez pas encore de compte? <a title="Titre du lien" href="inscription.html">Inscrivez-vous
      </a> dès maintenant</p>
      <a href="#" class="forgot">Mots de Passe oublié</a>
     </form>
@@ -51,9 +51,10 @@ if(isset($_POST['connexion'])){
                 $_POST['coname'] = $UserData['coname'];
                 $_POST['password'] = $UserData['password'];
 
-                echo '<p class="echo1">Vous êtes connecté.(attente de redirection)</p>';
+                header('Location: http://www.votresite.com/pageprotegee.php');
+                exit();
             } else { 
-           echo '<p class="echo2">Merci de créer un compte</p>';
+           echo '<p class="echo1">Merci de créer un compte</p>';
             }
         }else echo "Un ou plusieurs champs est manquant";
     }
