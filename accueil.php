@@ -28,8 +28,8 @@
              <li><a href="recherche.php">Recherche</a></li>
              <li><a href="tracks.php">Playlist's tracks</a></li>
              <li><a href="inscription.php">Log out</a></li>
-             <li><a href="inscription.php">S'inscrire</a></li>
-             <li><a href="inscription.php">Se connecter</a></li>
+             <li><a href="inscription.html">S'inscrire</a></li>
+             <li><a href="connexion.php">Se connecter</a></li>
 
          </ul>
 
