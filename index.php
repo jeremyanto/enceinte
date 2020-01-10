@@ -57,7 +57,7 @@ if(isset($_POST['connexion'])){
             } else { 
            echo '<p class="echo1">Merci de créer un compte</p>';
             }
-        }else echo "Un ou plusieurs champs est manquant";
+        }else echo '<p class="echo1">Un ou plusieurs champs manquant</p>';
     }
 
     
