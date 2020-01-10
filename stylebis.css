@@ -1,0 +1,645 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+
+footer, header, hgroup,
+menu, nav, output, ruby, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, p
+{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15%;
+}
+p
+{
+    font-size: 22px;
+}
+
+h3
+{
+    font-family: 'Roboto', sans-serif;
+}
+/***********************************************************************/
+
+/*________________________________Page d'accueil*________________________*/
+.body {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #fff;
+
+}
+
+.body img
+{
+    width: inherit;
+    height: inherit;
+}
+ .enceinteconnectee
+ {
+     background-color: grey;
+     width:40%;
+     height: 100px;
+     margin: 10% auto;
+ }
+
+.showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/hh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+
+}
+
+.navaccueil
+{
+    width: inherit;
+    height:inherit;
+}
+
+
+
+
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+
+
+.content .title {
+    font-size: 3.1rem;
+
+    color:black;
+    font-style: bold;
+
+
+
+
+}
+
+.content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+.containeraccueil {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 5rem 1rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #f4f4f4;
+}
+
+.h{ margin-top: -60px;}
+.h3{
+    margin-top: -60px;
+}
+
+footer {
+    padding: 2.2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Small Screens */
+@media (max-width: 560px) {
+    .showcase::after {
+        height: 50vh;
+    }
+
+    .content {
+        top: 5%;
+        margin-top: 5px;
+    }
+
+    .content .logo {
+        height: 140px;
+        width: 140px;
+    }
+
+    .content .text {
+        display: none;
+    }
+
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .services div {
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+    .content .title,
+    .content .text {
+        display: none;
+    }
+
+    .content {
+        top: 0;
+    }
+}
+
+
+/*______________________________________*/
+
+
+
+nav
+{
+     /*background-color: black;*/
+    width: 100%;
+    height:100px;
+}
+.navigation
+{
+
+}
+
+.profil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: darkgray;
+    float: right;
+    margin-right: 20px;
+    margin-top: 18px;
+
+}
+
+
+
+section
+{
+
+    display: flex;
+    margin: 5% auto;
+    flex-wrap: wrap;
+
+    /* background-color: grey;*/
+    width: 95%;
+    height: 650px;
+    justify-content: space-around;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+ .imgplaylist
+{
+    /*display: flex;*/
+     background-color: darkgray;
+    width: 15%;
+    height: 180px;
+   /* flex-wrap: wrap;*/
+
+
+}
+div .trackspictures
+{
+    background-color: darkgray;
+    width: 50%;
+    height: 90px;
+}
+
+div .PlayPartage
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+   /* background-color: yellow;*/
+    margin-top: 10%;
+}
+
+
+button
+{
+    /*border-color: #1db954;*/
+    border-radius: 30px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: small;
+
+}
+/*___________________________ShareButton____________*/
+.share {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: green;
+}
+
+
+/*____________________________ css menu burger_________________*/
+
+
+
+#nav-toggle {
+    background: transparent;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transform: translate(0%, -50%);
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    top: 10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    transition: all 0.5s ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(135deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-135deg);
+}
+
+
+/*___________________________________________Page de recherche_____________________*/
+/*search bar*/
+#searchbar
+{
+    display: block;
+    margin-left: 30%;
+    width:1040px;
+    height:auto;
+}
+.formulaire
+{
+    display:inline-block;
+}
+.formulaire .champ
+{
+    width:600px;
+    height:50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+}
+.formulaire .bouton
+{ background-image: url(img/search_bar.png);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 40px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+/*_________________________Suggestions_______________*/
+.suggestions
+{
+    /*background-color: red;*/
+    width: 80%;
+    height:350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .trackspictures
+{
+    background-color: darkgray;
+    width: 12%;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div .titleartist {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+
+}
+
+h3.opactitre, h3.opacartist
+{
+    display: block;
+   /* margin-top: 90%;*/
+
+   /* background-color: #f897ff;*/
+    text-align: center;
+    width:50px;
+    z-index: 10;
+    font-size: 12px;
+
+}
+.titretracksenlecture p
+{
+    font-size: 14px;
+}
+
+.musiquenlecture
+{
+    /*background-color: yellow;*/
+    height: 80px;
+    width: 50%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.tracksenlecture
+{
+    background-color: darkgray;
+    width: 12%;
+    height: 100%;
+    border-radius: 10px;
+}
+.titretracksenlecture
+{
+
+    height: 80%;
+    width:80%;
+    margin-top: 1%;
+    box-shadow: 2px 2px 2px 2px grey;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.newplaylist
+{
+    /*background-color : pink;*/
+    display: flex;
+
+}
+
+.ajouter
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background: darkgray;
+    margin: auto 2%;
+    text-align: center;
+
+}
+/*__________________________________Page ajouter à la playlist________________*/
+ul.navajouter {
+    font: 22px sans-serif;
+    display: table;
+    width: 80%;
+    margin: 50px 10% 0px 10%;
+
+}
+/*ul*/ .navajouter li {
+    display: table-cell;
+}
+ul.navajouter li a {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 16px 16px 30px 16px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    transition: padding 0.3s;
+}
+
+ul.navajouter li:first-child a {
+    border-radius: 3px 0 0 3px;
+}
+ul.navajouter li:last-child a {
+    border-radius: 0 3px 3px 0;
+}
+
+ul.navajouter li a:hover,
+ul li a:focus {
+    padding: 0px 55px 20px 55px;
+    font-size: 40px;
+}
+
+div.container {
+   /* margin-left: 2.5%;
+    margin-right: 5%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding-left: 5%;
+    /*background-color: #ffe6cf;*/
+    margin: auto auto;
+
+
+}
+
+.div {
+    float: left;
+    margin: 0 0.7% 25px 0.7%;
+    height: 120px;
+    width: 12%;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: cadetblue;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    background-color: orange;
+    margin: 0 0.7% 25px 0.7%;
+    text-align: center;
+    display: block;
+}
+
+/*
+
+.playlist
+{
+    background-color: pink;
+    width:100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pochetteplaylist
+{
+    background-color: darkgray;
+    width:50%;
+   height: 100%;
+
+}
+titres
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    width:50%;
+    height:100px;
+}
+
+
+ */
+iframe.lecture
+{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    width: 130px;
+    height: 40px;
+
+}
+iframe.recentplay
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*______________________________________________MENU BURGER 2*/
+
+a.close
+{
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 60%;
+    cursor:pointer;
+    color:white;
+}
+
+a.close:hover
+{
+    opacity:0.33;
+}
+div#snav{
+    background:#000;
+    opacity:60%;
+    width:9.2vw;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    left:-100vw;
+    top:0;
+    bottom: 0;
+
+    transition:left 0.8s ease;
+    padding:5vw;
+}
+
+/*_______________________Playlist A.G-S*________*/
+
+

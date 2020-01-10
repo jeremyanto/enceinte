@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+
+footer, header, hgroup,
+menu, nav, output, ruby, div, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1
+{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15%;
+}
+
+/***********************************************************************/
+
+
+
+nav
+{
+    /* background-color: black; */
+    width: 100%;
+    height:100px;
+}
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: darkgray;
+    float: right;
+    margin-right: 15px;
+    margin-top: 18px;
+
+}
+
+section
+{
+
+    display: flex;
+    margin: 5% auto;
+    flex-wrap: wrap;
+    /*background-color: ;*/
+    width: 95%;
+    height: 720px;
+    justify-content: space-around;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.row{
+    display: flex;
+    /* background-color: red;*/
+    width: 15%;
+    height: 180px;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+
+
+}
+
+.row:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+}
+
+.share{
+    width: 9%;
+    height: 9px;
+}
+div.trackspictures
+{
+    background-color: rgba(137,55,220,0.75);
+    width: 50%;
+    height: 90px;
+    opacity:100%;
+}
+.trackspictures span , .trackspictures div , .trackspictures img
+{
+    opacity: inherit;
+}
+
+
+div .PlayPartage
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    /*background-color: red;*/
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 5px;
+    background-color: transparent ;
+    border-radius: 50%;
+    display: inline-block;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+}
+.dot:hover, .rs{
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 5px;
+
+}
+.rs{
+
+    margin-left: 105px;
+    margin-top: -20px;
+    margin-bottom: 23px;
+    transition: all ease 300ms;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity0;
+}
+
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+button
+{
+    /*border-color: #1db954;*/
+    height: 35px;
+    width: 35px;
+    margin-left: 7px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: rgba(220, 194, 120, 0);
+    border-radius: 50% ;
+    border-color: transparent;
+    display: inline-block;
+    z-index: 2;
+
+}
+.play {
+    width: 0px;
+    height: 0px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid #000000;
+    z-index: -1;
+
+
+}
+
+.iframeplay
+{
+
+}
+
+
+/*___________________________ShareButton____________*/
+
+
+/*____________________________ css menu burger_________________*/
+
+
+
+#nav-toggle {
+    background: transparent;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transform: translate(0%, -50%);
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    top: 10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    transition: all 0.5s ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(135deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-135deg);
+}

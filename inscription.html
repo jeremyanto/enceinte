@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="google-signin-client_id" content="934858627137-tt6k02hsqfansqdqg69jkm161is3cnpf.apps.googleusercontent.com">
+    <link rel="stylesheet" type="text/css" href="styleinscription.css">
+
+</head>
+<body>
+
+
+
+<div class="g-signin2" data-cookiepolicy='single_host_origin' data-onsuccess="onSignIn"></div>
+<div id="data"></div>
+
+
+<div class="form">
+    <form action="##" method="POST">
+        <input type="text" placeholder="Nom" id="name" required="required">
+        <input type="text" placeholder="Prénom" id="firstname" required="required">
+        <input type="text" placeholder="Email"id="adresse" required="required">
+
+        <input type="text" placeholder="Identifiant"id="Id"  required="required">
+        <input type="password" placeholder="Mot de passe"id="mdp"required="required">
+
+        <div class="bouton">
+            <button name="button" id ="next">Suivant</button>
+        </div>
+
+
+
+</div>
+</form>
+
+<div class ="sortie">
+    <button class="exit" onclick="signOut()">Sign Out</button>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<script >
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
+
+        var data = document.querySelector("#data");
+        data.innerHTML = "<h1>"+profile.getName()+"</h1><img src='"+profile.getImageUrl()+"'>";
+    }
+</script>
+
+<script>
+
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        /*auth2.signOut().then(function () {
+          console.log('User signed out.');
+          //document.location.reload(true);
+        });*/
+        auth2.signOut().then(function () {
+            auth2.disconnect();
+            gapi.auth2.getAuthInstance().currentUser.get().reloadAuthResponse();
+            document.location.reload(true);
+        });
+    }
+</script>
+</body>
+</html>
