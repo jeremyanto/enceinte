@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Enceinte Spotify</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name = "google-signin-client_id" content = " 491045310353-cbmach9bp2or83gephlcpvq7irorqrvd.apps.googleusercontent.com ">
 </head>
 <body>
 
@@ -14,7 +16,8 @@
   <br>  <input type="text" placeholder="  Identifiant" id="username" class="name" name="coname"> </br>
   <br>  <input type="password" placeholder="  Mots de Passe" id="password" class="name" name="password"></br> 
 <br>  <input type="submit" class="btn1" value="connexion" name="connexion"></br>
-<br>  <input type="submit" class="btn" value="Se connecter avec Spotify"></br>
+<p>-ou-</p>
+<br>  <div class="g-signin2" data-onsuccess="onSignIn" ></div></br>
     <p class="pti">Vous n'avez pas encore de compte? <a title="Titre du lien" href="#">Inscrivez-vous
      </a> dès maintenant</p>
      <a href="#" class="forgot">Mots de Passe oublié</a>
