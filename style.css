@@ -18,10 +18,10 @@ p {
     margin-top: 8px;
 }
 
-.btn {
+.btn1 {
     color: white;
-    background-color: #1CB954;
-    border-color: #1cb954;
+    background-color: #81b71a;
+    border-color: #81b71a;
     border-radius: 10px 10px 10px 10px;
     width: 250px;
     padding-top: 8px;
@@ -29,15 +29,10 @@ p {
 
 }
 
-.btn1 {
-    border-radius: 20px;
-    background-color: #9a9a9a;
-    border-color: #9a9a9a;
-    color: white;
-    border-radius: 10px 10px 10px 10px;
-    width: 150px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.g-signin2 {
+    padding-left: 8.5em;
+    
+
 }
 
 .pti {
