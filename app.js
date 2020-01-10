@@ -1,7 +1,21 @@
-document.querySelector("#nav-toggle")
+/*document.querySelector("#nav-toggle")
     .addEventListener("click", function () {
         this.classList.toggle("active");
-    });
+    });*/
+
+function openNav(){
+    document.getElementById("snav").style.left="0vw";
+
+    document.querySelector("#nav-toggle").style.opacity="0%" ;
+
+}
+function closeNav(c){
+    /*c.style.left="-90vw"*/
+    document.getElementById("snav").style.left = "-110vw";
+    document.querySelector("#nav-toggle").style.opacity="100%" ;
+
+}
+
 
 
 
