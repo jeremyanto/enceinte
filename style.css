@@ -7,12 +7,12 @@
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: #dddddd;
-    
+
 }
 
 p {
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 20px;
     margin-bottom: 0px;
     margin-top: 8px;
@@ -21,7 +21,7 @@ p {
 .btn {
     color: white;
     background-color: #1CB954;
-    border-color: #1cb954 ;
+    border-color: #1cb954;
     border-radius: 10px 10px 10px 10px;
     width: 250px;
     padding-top: 8px;
@@ -45,29 +45,40 @@ p {
 }
 
 body {
-    
+
     position: absolute;
-            top: 0; bottom: 0; left: 0; right: 0;
-            height: 100%;
-        margin:0;
-        padding:0;
-        background-size: 100% ;
-        width:100%;  
-        color:black;
-    }
-    body:before {
-            content: "";
-            position: fixed;
-            height: 100%; width: 100%;
-            background: url(img/couleur.jpg);
-            background-size: cover;
-            z-index: -1; /* Keep the background behind the content */     
-            -webkit-filter: blur(6px);
-        -webkit-background-size: cover; /* pour Chrome et Safari */
-        -moz-background-size: cover; /* pour Firefox */
-        -o-background-size: cover; /* pour Opera */
-        background-size: cover; /* version standardisée */
-    }
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    width: 100%;
+    color: black;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: url(./img/couleur.jpg);
+    background-size: cover;
+    z-index: -1;
+    /* Keep the background behind the content */
+    -webkit-filter: blur(6px);
+    -webkit-background-size: cover;
+    /* pour Chrome et Safari */
+    -moz-background-size: cover;
+    /* pour Firefox */
+    -o-background-size: cover;
+    /* pour Opera */
+    background-size: cover;
+    /* version standardisée */
+}
+
 .name {
     width: 300px;
     border-radius: 25px;
@@ -77,4 +88,8 @@ body {
 
 .forgot {
     font-size: 12px;
+}
+
+.echo1 {
+    color: red;
 }
