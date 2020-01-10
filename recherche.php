@@ -21,20 +21,18 @@
 
 <main>
 
-    <div id="snav">
-        <a id="nav-toggle2" class="close" onClick="closeNav(this)">&times;</a>
-        <ul class="navigation">
-            <li><a href="accueil.html">Accueil</a></li>
-            <li><a href="playlist.html">Playlist</a></li>
-            <li><a href="recherche.html">Recherche</a></li>
-             <li><a href="tracks.html">Playlist's tracks</a></li>
-
-            <li><a href="inscription.php">Log in</a></li>
-
-
-
-        </ul>
-    </div>
+     <div id="snav">
+         <a id="nav-toggle2" class="close" onClick="closeNav(this)">&times;</a>
+         <ul class="navigation">
+             <li><a href="accueil.php">Accueil</a></li>
+             <li><a href="playlist.html">Playlist</a></li>
+             <li><a href="recherche.php">Recherche</a></li>
+             <li><a href="tracks.php">Playlist's tracks</a></li>
+             <li><a href="inscription.php">Log out</a></li>
+             <li><a href="inscription.html">S'inscrire</a></li>
+             <li><a href="connexion.php">Se connecter</a></li>
+         </ul>
+     </div>
 
     
     <div id="searchbar">
