@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Enceinte Spotify</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="connexion.css">
   <link rel="icon" href="https://www.favicon.cc/logo3d/898621.png" />
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <meta name = "google-signin-client_id" content = " 491045310353-cbmach9bp2or83gephlcpvq7irorqrvd.apps.googleusercontent.com ">
