@@ -257,3 +257,36 @@ button
 #nav-toggle.active span:after {
     transform: rotate(-135deg);
 }
+
+
+
+/*_______CSS menu 2______*/
+
+a.close
+{
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 60%;
+    cursor:pointer;
+    color:white;
+}
+
+a.close:hover
+{
+    opacity:0.33;
+}
+div#snav{
+    background:#000;
+    opacity:60%;
+    width:9.2vw;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    left:-100vw;
+    top:0;
+    bottom: 0;
+
+    transition:left 0.8s ease;
+    padding:5vw;
+}
