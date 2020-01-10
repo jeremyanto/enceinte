@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Enceinte Spotify</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://www.favicon.cc/logo3d/898621.png" />
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <meta name = "google-signin-client_id" content = " 491045310353-cbmach9bp2or83gephlcpvq7irorqrvd.apps.googleusercontent.com ">
 </head>
@@ -51,7 +52,7 @@ if(isset($_POST['connexion'])){
                 $_POST['coname'] = $UserData['coname'];
                 $_POST['password'] = $UserData['password'];
 
-                header('Location: http://www.votresite.com/pageprotegee.php');
+                header('Location: https://www.spotify.com/fr/');
                 exit();
             } else { 
            echo '<p class="echo1">Merci de créer un compte</p>';
