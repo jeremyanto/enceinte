@@ -24,7 +24,7 @@
 
          <ul class="navigation">
              <li><a href="accueil.php">Accueil</a></li>
-             <li><a href="playlist.php">Playlist</a></li>
+             <li><a href="playlist.html">Playlist</a></li>
              <li><a href="recherche.php">Recherche</a></li>
              <li><a href="tracks.php">Playlist's tracks</a></li>
              <li><a href="inscription.php">Log out</a></li>
