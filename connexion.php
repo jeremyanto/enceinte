@@ -52,7 +52,7 @@ if(isset($_POST['connexion'])){
                 $_POST['coname'] = $UserData['coname'];
                 $_POST['password'] = $UserData['password'];
 
-                header('Location: https://www.spotify.com/fr/');
+                header('Location: accueil.php');
                 exit();
             } else { 
            echo '<p class="echo1">Merci de créer un compte</p>';
